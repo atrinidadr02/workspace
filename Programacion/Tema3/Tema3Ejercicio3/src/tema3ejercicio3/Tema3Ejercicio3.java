@@ -17,6 +17,17 @@ public class Tema3Ejercicio3 {
         
         if (num1 > num2){
             if (num1 > num3){
+                System.out.println("El numero mayor de los introducidos es: " + num1);
+            }
+            else{
+                System.out.println("El numero mayor de los introducidos es: " + num3);
+        
+            }
+        }
+        else if (num2 > num3){ 
+            System.out.println("El numero mayor de los introducidos es: " + num2);
+            
+            
         }
     }
         
