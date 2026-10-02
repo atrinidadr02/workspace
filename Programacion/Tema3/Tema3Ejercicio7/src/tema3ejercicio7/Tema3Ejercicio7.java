@@ -13,8 +13,15 @@ public class Tema3Ejercicio7 {
         diasemana = entrada.nextInt();//pregunto al usuario por un número y le doy ese valor a la variable
         
         switch(diasemana){
-            case 1, 2, 3, 4, 5 -> laborable = true;//hago que se almacene true en boolean si el número introducido esta entre el 1 y el 5
-            case 6, 7 -> laborable = false;//hago que se almacene false en boolean si el número introducido es el 6 o el 7          
+            case 1:
+            case 2: 
+            case 3: 
+            case 4:
+            case 5:laborable = true;
+                break;//hago que se almacene true en boolean si el número introducido esta entre el 1 y el 5
+            case 6:
+            case 7:laborable = false;
+                break;//hago que se almacene false en boolean si el número introducido es el 6 o el 7          
         }
         
         if (diasemana >=1 && diasemana <= 7){

@@ -6,7 +6,7 @@ public class Tema3Ejercicio8 {
 
     public static void main(String[] args) {
         int billetes50, billetes20, billetes10, billetes5, monedas2, monedas1, resto, dinero;//declaro las variables
-        Scanner entrada = new Scanner(System.in);//creo el Scannr
+        Scanner entrada = new Scanner(System.in);//creo el Scanner
         
         System.out.println("Introduce una cantidad de dinero: ");
         dinero = entrada.nextInt();//pregunto por la cantidad y lo declaro a la variable dinero
@@ -34,11 +34,11 @@ public class Tema3Ejercicio8 {
         if(billetes50>0){
             System.out.println("Billetes de 50 euros: " + billetes50);
         }
-         if(billetes20>0){
+        if(billetes20>0){
             System.out.println("Billetes de 20 euros: " + billetes20);
         }
         if(billetes10>0){
-            System.out.println("Billetes de 20 euros: " + billetes10);
+            System.out.println("Billetes de 10 euros: " + billetes10);
         }
         if(billetes5>0){
             System.out.println("Billetes de 5 euros: " + billetes5);

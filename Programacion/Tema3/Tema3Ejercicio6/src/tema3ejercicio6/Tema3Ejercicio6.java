@@ -11,19 +11,19 @@ public class Tema3Ejercicio6 {
         System.out.println("Introduzca su nota: ");
         nota = entrada.nextDouble();//pido que se introduzca la nota y le doy ese valor a la variable
         
-        if (nota > 8.999 && nota < 10.001){
+        if (nota >= 9 && nota <= 10){
             System.out.println("Tu nota es un sobresaliente");
         }
         
-        else if (nota > 6.999 && nota < 9){
+        else if (nota >= 7 && nota < 9){
             System.out.println("Tu nota es un notable");
         }
         
-        else if (nota > 4.999 && nota < 7){
+        else if (nota >= 5 && nota < 7){
             System.out.println("Tu nota es un bien");
         }
         
-        else if (nota > -0.001 && nota < 5){
+        else if (nota >= 0 && nota < 5){
             System.out.println("Tu nota es un suspenso");
         }
         
