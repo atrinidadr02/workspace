@@ -1,20 +1,36 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package tema3ejercicio18;
 
-/**
- *
- * @author Angel
- */
+import java.util.Scanner;
+
 public class Tema3Ejercicio18 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int contraseña, intentos=3, contraseñaCorrecta=1714;
+        Scanner entrada = new Scanner(System.in);
+        
+        do{
+            System.out.print("Introduce la contraseña :");
+            contraseña = entrada.nextInt();
+            
+            if(contraseña==contraseñaCorrecta){
+                System.out.println("La contraseña es correcta");
+                
+            }else{
+                intentos--;
+                System.out.println("La contraseña es incorrecta, te quedan " + intentos + " intentos");
+            }
+  
+        }while(intentos>0 && contraseñaCorrecta!=contraseña);
+        if(contraseña==contraseñaCorrecta){
+            System.out.println("Enhorabuena acceso permitido");
+          
+        }else{
+            System.out.println("Acceso denegado");
+        }
+        
+        
+
+        
     }
     
 }
