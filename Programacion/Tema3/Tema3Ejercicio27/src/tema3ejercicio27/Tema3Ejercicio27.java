@@ -13,31 +13,41 @@ public class Tema3Ejercicio27 {
         System.out.println("Introduce otro número: ");
         num2 = entrada.nextInt();
         
-        System.out.println("¿Qué quieres hacer con los números?\n" + "1.- Sumar los números.\n" + "2.- Restar los números.\n" + "3.- Multiplicar los números.\n" + "4.- Dividir los números.\n" + "5.- Salir del programa");
-        opcion = entrada.nextInt();
-        
         do{
-            switch (opcion) {
-                case 1 -> {
-                    resultado=num1+num2;
-                    System.out.println("La suma de " + num1 + " y " + num2 + " es: " +resultado);
-                }
-                case 2 -> {
-                    resultado=num1-num2;
-                    System.out.println("La resta de " + num1 + " y " + num2 + " es: " +resultado);
-                }
-                case 3 -> {
-                    resultado=num1*num2;
-                    System.out.println("El producto de " + num1 + " y " + num2 + " es: " +resultado);
-                }
+            System.out.println("-MENU DE OPCIONES-");
+            System.out.println("1-Sumar los numeros");
+            System.out.println("2-Restar los numeros");
+            System.out.println("3-Multiplicar los numeros");
+            System.out.println("4-Dividir los numeros");
+            System.out.println("5-Salir del programa");
+            
+            opcion = entrada.nextInt();
+            
+            
+            switch (opcion){
+                case 1 -> System.out.println("La suma es: " + (num1+num2));
+                
+                case 2 -> System.out.println("La resta es: " + (num1-num2));
+                
+                case 3 -> System.out.println("La multiplicación es: " + (num1*num2));
+                
                 case 4 -> {
-                    resultado=num1/num2;
-                    System.out.println("La división de " + num1 + " y " + num2 + " es: " +resultado);
+                    try{
+                        resultado = num1/num2;
+                        System.out.println("La división es: " + resultado);
+                    }catch(ArithmeticException e){
+                        System.out.println("ERROR. No se puede dividir entre 0");
+                    }
                 }
-        
-
+                
+                case 5 -> System.out.println("Saliendo del programa");
+                
+                default -> System.out.println("Elige una de las opciones, numeros del 1 al 5");
             }
-        }while(opcion)
+            
+        }while(opcion != 5);
+   
+            
     }
     
 }
