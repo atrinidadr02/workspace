@@ -4,7 +4,7 @@ import java.util.Scanner;//importo el Scanner
 
 public class Tema4Ejercicio01 {
         
-    public static void compruebaPosNeg(int num){//creo el metodo que comprobara si es positivo o negativo
+    public static void compruebapositivosynegativos(int num){//creo el metodo que comprobara si es positivo o negativo
         if(num<0){
             System.out.println("El numero es " + num + " negativo");
         }else{
@@ -20,7 +20,7 @@ public class Tema4Ejercicio01 {
         System.out.println("Por favor, introduzca un número: ");
         numero = entrada.nextInt();//solicito el número y le doy el valor a la variable
         
-        compruebaPosNeg(numero);//llamo al metodo que hace la comprobación y imprime por pantalla el resultado 
+        compruebapositivosynegativos(numero);//llamo al metodo que hace la comprobación y imprime por pantalla el resultado 
         
     }
     

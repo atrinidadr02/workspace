@@ -15,7 +15,7 @@ public class Tema4Ejercicio04 {
         System.out.println("Por favor, introduzca un tercer numero: ");
         num3 = entrada.nextDouble();//pregunto por los números y le doy valor a cada variable
         
-        comprobar.mayor(num1, num2, num3);//llamo a la clase que tiene el metodo que comprueba cual es el menor de todos
+        Comprobar.mayor(num1, num2, num3);//llamo a la clase que tiene el metodo que comprueba cual es el menor de todos
     }
     
 }

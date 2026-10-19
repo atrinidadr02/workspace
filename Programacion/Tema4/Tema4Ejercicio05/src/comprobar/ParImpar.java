@@ -1,7 +1,7 @@
 package comprobar;
 
-public class parImpar {
-    public static void parImpar(int num){//creo el metodo
+public class ParImpar {
+    public static void parimpar(int num){//creo el metodo
         if(num%2 == 0){
             System.out.println("El numero " + num + " es par");
         }else{

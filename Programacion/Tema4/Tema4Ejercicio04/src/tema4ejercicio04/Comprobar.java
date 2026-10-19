@@ -1,6 +1,6 @@
 package tema4ejercicio04;
 
-public class comprobar {
+public class Comprobar {
     public static void mayor(double num1, double num2, double num3){//creo el metodo
         if (num1 < num2 && num1 < num3){
             System.out.println("El numero menor de los introducidos es: " + num1);  

@@ -11,7 +11,7 @@ public class Tema4Ejercicio05 {
         System.out.println("Introduce un numero y te dire si es par o impar: ");
         num = entrada.nextInt();//pregunto por un numero y le doy el valor a la variable
         
-        comprobar.parImpar.parImpar(num);//llamo al paquete que contiene la clase con el metodo que soluciona el problema
+        comprobar.ParImpar.parimpar(num);//llamo al paquete que contiene la clase con el metodo que soluciona el problema
         
     }
     
