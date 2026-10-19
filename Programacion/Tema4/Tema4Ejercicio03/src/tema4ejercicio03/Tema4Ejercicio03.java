@@ -1,6 +1,7 @@
 package tema4ejercicio03;
 
-import java.util.Scanner;
+import java.util.Scanner;//importo el Scanner
+import comprobar.Mayor;//importo el paquete y la clase
 
 public class Tema4Ejercicio03 {
 
@@ -15,7 +16,7 @@ public class Tema4Ejercicio03 {
         System.out.println("Por favor, introduzca un tercer numero: ");
         num3 = entrada.nextDouble();//pregunto por los números y le doy valor a cada variable
         
-        comprobar.Mayor.comprobar(num1, num2, num3);//llamo a la clase que tiene el metodo que dice cual es el mayor
+        Mayor.comprobar(num1, num2, num3);//llamo a la clase que tiene el metodo que dice cual es el mayor
     }
     
 }

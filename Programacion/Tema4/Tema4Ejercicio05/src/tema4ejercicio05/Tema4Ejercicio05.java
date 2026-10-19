@@ -1,6 +1,7 @@
 package tema4ejercicio05;
 
 import java.util.Scanner;//importo el Scanner
+import comprobar.ParImpar;//importo el paquete y la clase
 
 public class Tema4Ejercicio05 {
 
@@ -11,7 +12,7 @@ public class Tema4Ejercicio05 {
         System.out.println("Introduce un numero y te dire si es par o impar: ");
         num = entrada.nextInt();//pregunto por un numero y le doy el valor a la variable
         
-        comprobar.ParImpar.parimpar(num);//llamo al paquete que contiene la clase con el metodo que soluciona el problema
+        ParImpar.parimpar(num);//llamo al paquete que contiene la clase con el metodo que soluciona el problema
         
     }
     
