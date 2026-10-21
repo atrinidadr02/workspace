@@ -1,6 +1,6 @@
 package tema4ejercicio06;
 
-import java.util.Scanner;//importo el Scanner
+import java.util.Scanner;//importo el Scanner 
 
 public class Tema4Ejercicio06 {
 
@@ -35,7 +35,7 @@ public class Tema4Ejercicio06 {
         else{
             System.out.println("La nota introducida no es valida, debe estar entre 0 y 10.");
         /*comparo el valor con las notas que diferencian si será sobresaliente, notable etc
-        si no entra dentro de esas notas, dirá que no es valida la nota introducida.
+        si no entra dentro de esas notas, dira que no es valida la nota introducida.
         */    
         }
     }
