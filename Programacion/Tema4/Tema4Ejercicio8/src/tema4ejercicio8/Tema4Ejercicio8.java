@@ -5,7 +5,7 @@ import java.util.Scanner;//importo el Scanner
 public class Tema4Ejercicio8 {
 
     public static void main(String[] args) {
-        int dinero;//declaro e inicializo las variables
+        int dinero;//declaro la variable
         Scanner entrada = new Scanner(System.in);//creo un nuevo Scanner
         
         System.out.println("¿Cuanto dinero tienes?");
@@ -16,11 +16,12 @@ public class Tema4Ejercicio8 {
         
     }
     
+    
+    
     public static void operaciones(int dinero){//creo el metodo
-        int resto, billetes50, billetes20, billetes10, billetes5, monedas2, monedas1;
+        int resto, billetes50, billetes20, billetes10, billetes5, monedas2, monedas1;//declaro las variables
         
-        
-        
+    
         billetes50=dinero/50;
         resto=dinero%50;
         

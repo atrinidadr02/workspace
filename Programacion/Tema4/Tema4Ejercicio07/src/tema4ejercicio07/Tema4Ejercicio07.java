@@ -25,8 +25,7 @@ public class Tema4Ejercicio07 {
     
         
     public static void ordenar(int num1, int num2, int num3, int num4){//creo el metodo que realizara el orden
-        int aux, i;
-        
+        int aux, i;//declaro las variables        
         
         
         for(i=0; i<3; i++){
