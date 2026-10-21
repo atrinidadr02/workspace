@@ -5,18 +5,22 @@ import java.util.Scanner;//importo el Scanner
 public class Tema4Ejercicio8 {
 
     public static void main(String[] args) {
-        int dinero, resto=0, billetes50=0, billetes20=0, billetes10=0, billetes5=0, monedas2=0, monedas1=0;//declaro e inicializo las variables
+        int dinero;//declaro e inicializo las variables
         Scanner entrada = new Scanner(System.in);//creo un nuevo Scanner
         
         System.out.println("¿Cuanto dinero tienes?");
         dinero = entrada.nextInt();//pregunto por el valor y lo introduzco a la variable
         
-        operaciones(dinero, resto, billetes50, billetes20, billetes10, billetes5, monedas2, monedas1);//llamo al metodo que realiza las cuentas
+        operaciones(dinero);//llamo al metodo que realiza las cuentas
         
         
     }
     
-    public static void operaciones(int dinero, int resto, int billetes50, int billetes20, int billetes10, int billetes5, int monedas2, int monedas1){//creo el metodo
+    public static void operaciones(int dinero){//creo el metodo
+        int resto, billetes50, billetes20, billetes10, billetes5, monedas2, monedas1;
+        
+        
+        
         billetes50=dinero/50;
         resto=dinero%50;
         

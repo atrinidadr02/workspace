@@ -11,10 +11,10 @@ public class Tema4Ejercicio06 {
         System.out.println("Introduzca su nota: ");
         nota = entrada.nextDouble();//pido que se introduzca la nota y le doy ese valor a la variable
         
-        nota(nota);//llamo al metodo que resuelve el problema
+        calcularNota(nota);//llamo al metodo que resuelve el problema
     }
     
-    public static void nota(double nota){//creo el metodo
+    public static void calcularNota(double nota){//creo el metodo
         
         if (nota >= 9 && nota <= 10){
             System.out.println("Tu nota es un sobresaliente");

@@ -5,7 +5,7 @@ import java.util.Scanner;//importo el Scanner
 public class Tema4Ejercicio07 {
 
     public static void main(String[] args) {
-        int num1, num2, num3, num4, aux=0;//declaro las variables
+        int num1, num2, num3, num4;//declaro las variables
         Scanner entrada = new Scanner(System.in);//creo un nuevo Scanner
         
         
@@ -19,14 +19,17 @@ public class Tema4Ejercicio07 {
         num4 = entrada.nextInt();
         //pido al usuario que me de los cuatro números y les doy el valor a cada variable
         
-        ordenar(num1,num2,num3,num4,aux);//llamo al metodo que ordena los numeros
+        ordenar(num1,num2,num3,num4);//llamo al metodo que ordena los numeros
     }   
      
     
         
-    public static void ordenar(int num1, int num2, int num3, int num4, int aux){//creo el metodo que realizara el orden
+    public static void ordenar(int num1, int num2, int num3, int num4){//creo el metodo que realizara el orden
+        int aux, i;
         
-        for(int i=0; i<3; i++){
+        
+        
+        for(i=0; i<3; i++){
             if (num1>num2){
             aux=num1;
             num1=num2;
