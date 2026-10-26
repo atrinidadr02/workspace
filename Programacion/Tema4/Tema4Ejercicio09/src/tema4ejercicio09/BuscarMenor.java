@@ -1,14 +1,8 @@
 package tema4ejercicio09;
 
-import static tema4ejercicio09.PedirNumeros.pedirNumeros;//importo la clase con la cual se piden los numeros 
-
 public class BuscarMenor {
-    public static void mostrarMenor(){
-        int num1, num2, num3;//creo las variables
+    public static void mostrarMenor(int num1, int num2, int num3){//creo el metodo que busca e imprime el menor
         
-        num1=pedirNumeros();
-        num2=pedirNumeros();
-        num3=pedirNumeros();//doy el valor a cada variable llamando al metodo que pide y almacena los numeros 
         
         if(num1 < num2 && num1 < num3){
             System.out.println("El numero menor es " + num1);

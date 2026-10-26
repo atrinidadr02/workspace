@@ -12,10 +12,10 @@ public class PedirNumero {
             System.out.print("Introduce un número mayor que 0 y te dare su raiz cuadrada: ");
             num = entrada.nextInt();//pido el numero y lo almaceno 
             
-            if(num<0){
+            if(num<1){
                 System.out.println("Error, " + num + " es menor que 0");
             }
-        }while(num<0);
+        }while(num<1);
         
         return num;//devuelvo el numero para que lo utilice otro metodo
     }
