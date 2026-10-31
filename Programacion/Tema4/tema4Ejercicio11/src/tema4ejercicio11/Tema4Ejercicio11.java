@@ -1,46 +1,45 @@
 package tema4ejercicio11;
 
-import java.util.Scanner;
+import java.util.Scanner;//importo el Scanner
 
 public class Tema4Ejercicio11 {
 
     public static void main(String[] args) {
-        int num;
-        double raiz;//declaro la variable
+        double num;
+        double resultado;//declaro las variables
         
         do{
-            num = pedirNumero();//pido el numero y lo almaceno 
-            
-            if(num<1){
-                System.out.println("Error, " + num + " es menor que 0");
+            num=pedirNumero();
+            if(num<0){
+                System.out.println("Error, número menor que 0");
             }
-        }while(num<1);
+        }while(num<0);//creo un bucle para pedir el número mientras que el resultado sea menor que 0, mostrando un error si es menor
         
+        resultado=calcularRaiz(num);//llamo al metodo que calcula la raiz
         
-        System.out.println("La raiz de es: " + raiz);//imprimo por pantalla el resultado
+        mostrarResultado(resultado, num);//llamo al metodo que imprime el resultado
     }
     
-    public static int pedirNumero(){//creo el metodo que pide el numero
-        int num;
-        Scanner entrada = new Scanner(System.in);//creo la variable y el Scanne
+    public static double pedirNumero(){//creo el metodo que pide el numero
+        double num;
+        Scanner entrada = new Scanner(System.in);//creo las variables y el Scanner
         
-        System.out.println("Introduce un número mayor que 0");
-        num = entrada.nextInt();
+        System.out.println("Introduce un número mayor que 0: ");
+        num = entrada.nextDouble();//pregunto y almaceno el número
         
-        return num;//devuelvo el numero para que lo utilice otro metodo
+        return num;//devuelvo el número
     }
     
-    public static double calcularRaiz(int num){//creo el metodo que calcula la raiz cuadrada
-        double raiz;
-        raiz = Math.sqrt(pedirNumero());//le doy el valor llamando al metodo que pide un numero 
+    public static double calcularRaiz(double num){//creo calcula el resultado
+        double resultado;
         
-        return raiz;
+        resultado = Math.sqrt(num);
+        
+        return resultado;//lo calculo y lo devuelvo
     }
     
-    public static double mostrarResultado(double raiz){
+    public static void mostrarResultado(double resultado, double num){//creo el metodo que imprime el resultado
         
-        raiz = calcularRaiz();
-        
-        return raiz;
+        System.out.println("La raiz de " + num + " es: " + resultado);//imprimo el resultado por pantalla
     }
 }

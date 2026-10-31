@@ -8,14 +8,15 @@ public class Tema4Ejercicio19 {
         Scanner entrada = new Scanner(System.in);
         String dia;
         String posicion;
-        boolean iguales;
         String lunes = "Lunes", martes = "Martes", miercoles = "Miercoles", jueves = "Jueves", viernes = "Viernes", sabado = "Sabado", domingo = "Domingo";
         
         System.out.println("Dime un dia de la semana y te dire su posicion");
         dia = entrada.nextLine();
         
         
-        if(l)
+        if(lunes.equalsIgnoreCase(dia))
+            
+            
         }
         
     }

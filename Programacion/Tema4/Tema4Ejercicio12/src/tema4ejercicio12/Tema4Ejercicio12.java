@@ -1,28 +1,56 @@
 package tema4ejercicio12;
 
-import static tema4ejercicio12.ComprobarContrasenia.comprobarContrasenia;//importo la clase que comprueba si la contraseña es correcta
+import java.util.Scanner;//importo el Scanner
 
 public class Tema4Ejercicio12 {
-
+    public static int contraseña = 1234;//declaro la constante de la contraseña
     public static void main(String[] args) {
-        int intentos = 3;
-        boolean resultado;//declaro las variables e inicializo la que cuenta los intentos
+        int contraseñaUsuario;
+        boolean resultado;
+        int intentos=2;//declaro las variables
+        do{
+            contraseñaUsuario=pedirContraseña();
         
-        do{//creo un bucle que se repetira hasta que la contraseña sea correcta o no se superen los 3 intentos
-            resultado = comprobarContrasenia();//llamo al metodo que comprueba si la contraseña es correcta o no
-            if(resultado == false){
-                --intentos;
-                System.out.println("Contraseña incorrecta, te quedan " + intentos + " intentos");
-            }
+            resultado=comprobarContraseña(contraseñaUsuario);
+        
+            mostrarResultado(resultado, intentos);
+            intentos--;
+        }while(intentos>=0 && !resultado);//creo un bucle para contabilizar el número de intentos de los subprogramas
+        
+        if(intentos>=0){
+            System.out.println("ACCESO PERMITIDO");
+        }else{
+            System.out.println("ACCESO DENEGADO, SUPERASTE EL NÚMERO DE INTENTOS");
+        }//doy un mensaje según el resultado
+    }
+    
+    public static int pedirContraseña(){//creo un metodo para pedir la contraseña
+        int contraseñaUsuario;
+        Scanner entrada = new Scanner(System.in);//declaro las variables
+        
+        System.out.println("Introduce la contraseña: ");
+        contraseñaUsuario = entrada.nextInt();//pregunto y doy valor a la variable
+        
+        return contraseñaUsuario;//devuelvo la contraseña del usuario
+    }
+    
+    public static boolean comprobarContraseña(int contraseñaUsuario){//creo un metodo para comprobar la contraseña
+        boolean resultado=false;//declaro la variable 
+        
+        if(contraseñaUsuario == contraseña){
+            resultado=true;
+        }else{//doy true o false según si la contraseña esta bien o no
             
-        }while(intentos>0 && resultado == false);//las condiciones para que el bucle siga repitiendose
-        
-        if(resultado == true){//si la contraseña es correcta lo imprime por pantalla
-            System.out.println("Correcto, contraseña correcta!!");
-        }else{//si la contraseña es incorrecta y se han superado el numero de 3 intentos imprime que le acceso ha sido denegado
-            System.out.println("Erorr, acceso denegado");
+        }
+        return resultado;//devuelvo el resultado
+    }
+    
+    public static void mostrarResultado(boolean resultado, int intentos){//creo un metodo para mostrar el resultado
+        if(resultado==true){
+            System.out.println("Contraseña correcta");
+        }else{
+            System.out.println("Contraseña incorrecta, te quedan " + intentos + " intentos");
         }
         
     }
-    
 }
