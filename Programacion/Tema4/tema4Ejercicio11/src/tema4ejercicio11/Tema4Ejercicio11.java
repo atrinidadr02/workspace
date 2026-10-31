@@ -6,7 +6,7 @@ public class Tema4Ejercicio11 {
 
     public static void main(String[] args) {
         int num;
-        int raiz;//declaro la variable
+        double raiz;//declaro la variable
         
         do{
             num = pedirNumero();//pido el numero y lo almaceno 
@@ -30,14 +30,14 @@ public class Tema4Ejercicio11 {
         return num;//devuelvo el numero para que lo utilice otro metodo
     }
     
-    public static void calcularRaiz(double raiz){//creo el metodo que calcula la raiz cuadrada
-        
+    public static double calcularRaiz(int num){//creo el metodo que calcula la raiz cuadrada
+        double raiz;
         raiz = Math.sqrt(pedirNumero());//le doy el valor llamando al metodo que pide un numero 
         
+        return raiz;
     }
     
-    public static double mostrarResultado(){
-        double raiz;
+    public static double mostrarResultado(double raiz){
         
         raiz = calcularRaiz();
         
