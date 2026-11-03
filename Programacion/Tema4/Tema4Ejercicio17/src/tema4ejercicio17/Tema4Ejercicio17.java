@@ -34,7 +34,7 @@ public class Tema4Ejercicio17 {
         boolean adivinado = false;//creo las variables y el Scanner
 
         while (!adivinado) {//creo un bucle que repite el programa mientras no se haya adivinado la letra
-            System.out.print("Introduce una letra: ");//se solicita al usuario una letra
+            System.out.println("Introduce una letra: ");//se solicita al usuario una letra
             letraUsuario = entrada.nextLine().charAt(0);//se pasa la letra al valor del codigo ascii
             intentos++;//se suma el primer intento
             
