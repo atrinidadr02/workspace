@@ -23,14 +23,14 @@ public class Tema4Ejercicio26 {
         int num;
         Scanner entrada = new Scanner(System.in);
         
-        System.out.println("Introduce un número que sea mayor que 0");
+        System.out.println("Introduce un número que sea mayor que 0: ");
         num=entrada.nextInt();
         
         return num;
     }
     
     public static boolean esPrimo(int num){
-        boolean primo=false;
+        boolean primo=true;
         int i=2;
         int e=2;
         double resultado;
