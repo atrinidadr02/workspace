@@ -6,8 +6,17 @@ public class Asignatura {
     private double nota;
     
 //Constructores
-    public Asignatura(String n) {
+    public Asignatura(String n, int nt) {
         nombre = n;
+        nota = nt;
+    }
+    public Asignatura(){
+        nombre = "";
+        nota = 0;
+    }
+    public Asignatura(String n){
+        nota = 0;
+        nombre = n;              
     }
     
 //Getters y Setters
