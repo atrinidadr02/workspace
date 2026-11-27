@@ -34,7 +34,7 @@ public class Test {
 
 
     public static void ejecutarOpcion(int opcion, Numero n1, Numero n2) {
-        switch (opcion) {
+        switch(opcion){
             case 1:
                 System.out.println("Resultado de la suma: " + (n1.getValor() + n2.getValor()));
                 break;

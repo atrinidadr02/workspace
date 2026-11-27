@@ -22,10 +22,10 @@ public class Numero {
     
     //Mostrar y toString
     public void mostrarNumero(){
-        System.out.println("El valor es: " + valor);
+        System.out.println("El resultado es: " + valor);
     }
     @Override
     public String toString(){
-        return "El valor es: " + valor;
+        return "El resultado es: " + valor;
     }
 }
